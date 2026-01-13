@@ -1,0 +1,110 @@
+:root {
+  --primary-red: #e7000b;
+  --text-dark: #101828;
+  --text-gray: #4a5565;
+  --text-light: #ffffff;
+  --bg-dark: #121212;
+  --bg-light: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+input, textarea {
+  font-family: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Animation Utility ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Partner Card Hover ===== */
+.partner-card img {
+  transition: filter 0.4s ease;
+}
+
+.partner-card.hovered img {
+  filter: blur(4px);
+}
+
+.partner-card .card-content {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.partner-card.hovered .card-content {
+  transform: translateY(-10px);
+}
+
+/* ===== Why Partner Card Hover ===== */
+.feature-card {
+  transition: background 0.4s ease, transform 0.3s ease;
+}
+
+.feature-card.hovered {
+  background: #e7000b;
+  transform: translateY(-6px);
+}
+
+/* ===== Submit Button ===== */
+.submit-btn {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn.hovered {
+  background-color: #000000;
+}
+
+.submit-btn.clicked {
+  transform: scale(0.97);
+}
