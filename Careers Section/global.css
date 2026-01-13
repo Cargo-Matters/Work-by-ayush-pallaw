@@ -1,0 +1,105 @@
+:root {
+  --primary-red: #ed3a40;
+  --primary-black: #000000;
+  --primary-white: #ffffff;
+  --gray-border: #dedede;
+  --text-dark: #000000;
+  --text-gray: #484848;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1528px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-padding {
+  padding: 96px 20px;
+}
+
+/* Utility for hidden visually but available for screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+
+
+
+
+
+
+/* ===== GLOBAL ANIMATION BASE ===== */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* WHY JOIN cards */
+.benefit-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(237, 58, 64, 0.25);
+}
+
+/* CURRENT OPENINGS cards */
+.job-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.job-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+}
+
+/* APPLY FORM */
+.apply-section {
+  transition: all 0.8s ease;
+}

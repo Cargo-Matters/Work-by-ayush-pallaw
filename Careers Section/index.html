@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers at Cargo Matters</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:Header */
+.header-section {
+  background-color: var(--primary-red);
+  width: 100%;
+  max-width: 1528px;
+  margin: 0 auto;
+}
+
+.site-header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #dedede; /* Fallback based on style_52 border */
+}
+
+.header-content {
+  width: 100%;
+  padding: 0 156px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  color: var(--primary-white);
+  font-weight: 700;
+  font-size: 20px; /* Estimated */
+}
+
+.main-nav {
+  display: flex;
+  gap: 32px; /* Adjusted for spacing */
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary-white);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 2px;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.support-btn {
+  background-color: var(--primary-white);
+  color: var(--primary-red); /* Assuming contrast */
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 1200px) {
+  .header-content {
+    padding: 0 40px;
+  }
+  .main-nav {
+    display: none; /* Mobile menu would go here */
+  }
+}
+
+/* CSS for section section:Hero */
+.hero-section {
+  position: relative;
+  width: 100%;
+  max-width: 1528px;
+  margin: 0 auto;
+  height: 980px; /* Based on image height */
+  overflow: hidden;
+}
+
+.hero-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 100px; /* Approximate positioning */
+  left: 74%;
+  transform: translateX(-50%);
+  width: 942px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.hero-blur-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.blur-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  text-align: center;
+  color: #000000;
+  max-width: 896px;
+}
+
+.hero-content h1 {
+  font-size: 48px; /* Estimated from Heading 1 */
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.hero-subtitle p {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.hero-description p {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .hero-section {
+    height: auto;
+    min-height: 600px;
+  }
+  .hero-overlay {
+    width: 90%;
+    bottom: 50px;
+  }
+}
+
+/* CSS for section section:WhyJoin */
+.why-join-section {
+  position: relative;
+  max-width: 1528px;
+  margin: 0 auto;
+  padding: 96px 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.why-join-bg-left, .why-join-bg-right {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.why-join-bg-left { left: 0; }
+.why-join-bg-right { right: 0; }
+
+.why-join-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 800px;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.section-subheader p {
+  font-size: 18px;
+  color: var(--text-dark);
+}
+
+.benefits-grid {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.benefit-card {
+  width: 302px;
+  height: 445px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 0.5px solid var(--primary-red);
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.benefit-image-wrapper {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 8px solid var(--primary-red);
+  margin-bottom: 24px;
+}
+
+.benefit-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.benefit-text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+@media (max-width: 1200px) {
+  .benefits-grid {
+    gap: 24px;
+  }
+}
+
+/* CSS for section section:Openings */
+.openings-section {
+  background-color: #ffffff;
+  padding: 96px 0;
+  max-width: 1528px;
+  margin: 0 auto;
+}
+
+.openings-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.openings-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.openings-header p {
+  font-size: 18px;
+  color: var(--text-gray);
+}
+
+.jobs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 0 20px;
+}
+
+.job-card {
+  background-color: #000000;
+  border: 1px solid #dedede;
+  border-radius: 30px;
+  padding: 32px;
+  width: 100%;
+  max-width: 950px;
+  color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.job-header {
+  margin-bottom: 24px;
+}
+
+.job-header h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.job-tags {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.job-details {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.detail-block h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--primary-white);
+}
+
+.detail-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.detail-block li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--primary-white);
+}
+
+.detail-block li::before {
+  content: "•";
+  color: var(--primary-red);
+  font-weight: bold;
+}
+
+.apply-btn {
+  background-color: var(--primary-red);
+  color: #ffffff;
+  padding: 8px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.apply-btn:hover {
+  background-color: #d6252e;
+}
+
+/* CSS for section section:ApplyForm */
+.apply-section {
+  padding: 96px 0;
+  background-color: #ffffff;
+  max-width: 1528px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 768px;
+  padding: 0 20px;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.form-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 702px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.required {
+  color: var(--primary-red);
+}
+
+.input-wrapper input, .textarea-wrapper textarea {
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #000000;
+  border-radius: 999px; /* Pill shape */
+  font-size: 14px;
+  outline: none;
+}
+
+.textarea-wrapper textarea {
+  border-radius: 16px;
+  height: 80px;
+  resize: vertical;
+}
+
+.file-upload-wrapper {
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.file-input-ui {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid #000000;
+  border-radius: 999px;
+  padding: 4px 16px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.choose-file-btn {
+  font-weight: 600;
+}
+
+.hidden-file-input {
+  display: none;
+}
+
+.file-hint {
+  font-size: 12px;
+  color: #666;
+}
+
+.submit-btn {
+  background-color: var(--primary-red);
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.privacy-note {
+  font-size: 12px;
+  text-align: center;
+  color: #666;
+}
+
+/* CSS for section section:Footer */
+.site-footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 48px 124px;
+  max-width: 1528px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-brand {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-brand h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-links-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  min-width: 150px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-middle {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.privacy-note {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 24px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 40px 20px;
+  }
+  .footer-top {
+    flex-direction: column;
+  }
+  .privacy-note {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="header" class="header-section">
+  <header class="site-header">
+    <div class="header-content">
+      <!-- Logo Area -->
+      <a href="#" class="logo-link">
+        <div class="logo-placeholder">
+          <!-- Assuming logo is text or simple shape based on JSON -->
+          <span class="logo-text">Cargo Matters</span>
+        </div>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <div class="nav-item">
+          <span>About Us</span>
+          <img src="images/3_127.svg" alt="dropdown" class="nav-icon">
+        </div>
+        <div class="nav-item">
+          <span>Services</span>
+          <img src="images/3_142.svg" alt="dropdown" class="nav-icon">
+        </div>
+        <div class="nav-item">
+          <span>Industries</span>
+          <img src="images/3_175.svg" alt="dropdown" class="nav-icon">
+        </div>
+        <div class="nav-item">
+          <span>Partner</span>
+          <img src="images/3_220.svg" alt="dropdown" class="nav-icon">
+        </div>
+        <div class="nav-item">
+          <span>Careers</span>
+          <img src="images/3_237.svg" alt="dropdown" class="nav-icon">
+        </div>
+        <div class="nav-item">
+          <span>Contact Us</span>
+          <img src="images/3_249.svg" alt="dropdown" class="nav-icon">
+        </div>
+      </nav>
+
+      <!-- Support Button -->
+      <a href="#" class="support-btn">Support</a>
+    </div>
+  </header>
+</section>
+<section id="hero" class="hero-section">
+  <div class="hero-container">
+    <!-- Main Hero Image -->
+    <img src="images/def12fe50ad57a85d5e68c01255806293ab144c2.png" alt="Cargo Matters Hero" class="hero-bg-image">
+    
+    <!-- Text Overlay with Blur Effect -->
+    <div class="hero-overlay">
+      <div class="hero-blur-bg">
+        <img src="images/3_260.svg" alt="" class="blur-svg">
+      </div>
+      <div class="hero-content">
+        <h1>Careers at Cargo Matters</h1>
+        <div class="hero-subtitle">
+          <p>Drive more than just trucks — drive your future.</p>
+        </div>
+        <div class="hero-description">
+          <p>We are looking for motivated individuals to power the supply chain that keeps businesses moving. Whether you are an experienced logistics professional or just getting started, there is a place for you here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="why-join" class="why-join-section">
+  <div class="why-join-bg-left">
+    <img src="images/3_275.svg" alt="">
+  </div>
+  <div class="why-join-bg-right">
+    <img src="images/3_276.svg" alt="">
+  </div>
+
+  <div class="why-join-content">
+    <div class="section-header">
+      <h2>Why Join Cargo Matters?</h2>
+      <div class="section-subheader">
+        <p>Join a team that values your growth, safety, and success</p>
+      </div>
+    </div>
+
+    <div class="benefits-grid">
+      <!-- Benefit 1 -->
+      <div class="benefit-card">
+        <div class="benefit-image-wrapper">
+          <img src="images/34007512dbb996aea6eddfddfdf7d513b8dbe5b3.png" alt="Steady Work" class="benefit-img">
+        </div>
+        <div class="benefit-text">
+          <h3>Steady Work &<br>Competitive Pay</h3>
+        </div>
+      </div>
+
+      <!-- Benefit 2 -->
+      <div class="benefit-card">
+        <div class="benefit-image-wrapper">
+          <img src="images/808d688f7651d5239cbe770c91a3f48207f833da.png" alt="Growth" class="benefit-img">
+        </div>
+        <div class="benefit-text">
+          <h3>Growth-Oriented<br>Career Paths</h3>
+        </div>
+      </div>
+
+      <!-- Benefit 3 -->
+      <div class="benefit-card">
+        <div class="benefit-image-wrapper">
+          <img src="images/e465afccc3fad57a9af00efb0c221af471a502d4.png" alt="Tech" class="benefit-img">
+        </div>
+        <div class="benefit-text">
+          <h3>Tech-Enabled,<br>Safe Workspaces</h3>
+        </div>
+      </div>
+
+      <!-- Benefit 4 -->
+      <div class="benefit-card">
+        <div class="benefit-image-wrapper">
+          <img src="images/4860c1e632525b6c63a496f5d0093dd7d06132d7.png" alt="Culture" class="benefit-img">
+        </div>
+        <div class="benefit-text">
+          <h3>Friendly, Supportive<br>Team Culture</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="openings" class="openings-section">
+  <div class="openings-header">
+    <h2>Current Openings</h2>
+    <p>Explore opportunities to join our growing team</p>
+  </div>
+
+  <div class="jobs-container">
+    <!-- Job 1: Delivery Driver -->
+    <div class="job-card">
+      <div class="job-header">
+        <h3>📦 1. Delivery Driver</h3>
+        <div class="job-tags">
+          <div class="tag">
+            <img src="images/3_646.svg" alt="icon">
+            <span>Type:</span>
+            <strong>Full-time | Field-based</strong>
+          </div>
+          <div class="tag">
+            <img src="images/3_653.svg" alt="icon">
+            <span>Experience:</span>
+            <strong>2+ years preferred</strong>
+          </div>
+        </div>
+      </div>
+      <div class="job-details">
+        <div class="detail-block">
+          <h4>Key Responsibilities:</h4>
+          <ul>
+            <li>Safely and timely delivery of goods to customers or warehouses.</li>
+            <li>Inspect vehicles before and after trips, ensuring basic maintenance and cleanliness.</li>
+            <li>Collect and verify delivery documents (invoices, PODs).</li>
+            <li>Follow assigned routes and schedules via GPS/app.</li>
+            <li>Maintain communication with dispatch and warehouse teams.</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <h4>Requirements:</h4>
+          <ul>
+            <li>Valid LMV Commercial Driver's License (mandatory)</li>
+            <li>Familiarity with local and regional routes</li>
+            <li>Good physical fitness</li>
+            <li>Basic smartphone and navigation skills</li>
+            <li>Professional attitude and customer service approach</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job-action">
+        <button class="apply-btn">Apply for this Position</button>
+      </div>
+    </div>
+
+    <!-- Job 2: Warehouse Supervisor -->
+    <div class="job-card">
+      <div class="job-header">
+        <h3>🏢 2. Warehouse Supervisor</h3>
+        <div class="job-tags">
+          <div class="tag">
+            <img src="images/3_560.svg" alt="icon">
+            <span>Type:</span>
+            <strong>Full-time | On-site</strong>
+          </div>
+          <div class="tag">
+            <img src="images/3_567.svg" alt="icon">
+            <span>Experience:</span>
+            <strong>3–5 years in warehouse operations</strong>
+          </div>
+        </div>
+      </div>
+      <div class="job-details">
+        <div class="detail-block">
+          <h4>Key Responsibilities:</h4>
+          <ul>
+            <li>Oversee daily warehouse operations including receiving, sorting, dispatching, and inventory control.</li>
+            <li>Lead and manage warehouse staff; ensure productivity and safety compliance.</li>
+            <li>Coordinate with logistics and delivery teams for smooth flow of shipments.</li>
+            <li>Maintain accurate stock records and generate periodic inventory reports</li>
+            <li>Ensure FIFO/LIFO and warehouse hygiene standards.</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <h4>Requirements:</h4>
+          <ul>
+            <li>Graduate in Supply Chain, Logistics, or related field</li>
+            <li>Experience with warehouse management systems (WMS)</li>
+            <li>Strong leadership and communication skills</li>
+            <li>Working knowledge of MS Excel and reporting tools</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job-action">
+        <button class="apply-btn">Apply for this Position</button>
+      </div>
+    </div>
+
+    <!-- Job 3: Logistics Coordinator -->
+    <div class="job-card">
+      <div class="job-header">
+        <h3>🌐 3. Logistics Coordinator</h3>
+        <div class="job-tags">
+          <div class="tag">
+            <img src="images/3_476.svg" alt="icon">
+            <span>Type:</span>
+            <strong>Full-time | Hybrid possible</strong>
+          </div>
+          <div class="tag">
+            <img src="images/3_483.svg" alt="icon">
+            <span>Experience:</span>
+            <strong>2–4 years</strong>
+          </div>
+        </div>
+      </div>
+      <div class="job-details">
+        <div class="detail-block">
+          <h4>Key Responsibilities:</h4>
+          <ul>
+            <li>Plan, coordinate, and monitor shipments from pickup to delivery.</li>
+            <li>Liaise with vendors, transporters, and customers to ensure timely logistics operations.</li>
+            <li>Monitor real-time tracking, handle exceptions or delays, and communicate proactively.</li>
+            <li>Maintain shipment documentation and ensure regulatory compliance (GST, eWay bills, etc.).</li>
+            <li>Optimize routes, modes, and schedules for cost-effectiveness.</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <h4>Requirements:</h4>
+          <ul>
+            <li>Bachelor's degree in Logistics, Supply Chain, or Business.</li>
+            <li>Strong organizational and problem-solving skills.</li>
+            <li>Familiarity with TMS/WMS and logistics software.</li>
+            <li>Excellent communication skills in English and Hindi.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job-action">
+        <button class="apply-btn">Apply for this Position</button>
+      </div>
+    </div>
+
+    <!-- Job 4: Internship -->
+    <div class="job-card">
+      <div class="job-header">
+        <h3>🎓 4. Internship: Logistics & Supply Chain</h3>
+        <div class="job-tags">
+          <div class="tag">
+            <img src="images/3_398.svg" alt="icon">
+            <span>Type:</span>
+            <strong>Internship (3–6 months) | Remote</strong>
+          </div>
+          <div class="tag">
+            <img src="images/3_405.svg" alt="icon">
+            <span>Experience:</span>
+            <strong>Final-year students or recent graduates</strong>
+          </div>
+        </div>
+      </div>
+      <div class="job-details">
+        <div class="detail-block">
+          <h4>Key Responsibilities:</h4>
+          <ul>
+            <li>Assist logistics and supply chain team in daily operations.</li>
+            <li>Support in tracking shipments, preparing reports, and documentation.</li>
+            <li>Conduct market research and process analysis for route or cost optimization.</li>
+            <li>Learn to use logistics management tools and dashboards.</li>
+            <li>Attend team meetings and contribute to problem-solving discussions.</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <h4>Requirements:</h4>
+          <ul>
+            <li>Pursuing or recently completed a degree in Logistics, Supply Chain, or Operations.</li>
+            <li>Good MS Excel and communication skills.</li>
+            <li>Enthusiastic, willing to learn, and detail-oriented.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job-action">
+        <button class="apply-btn">Apply for this Position</button>
+      </div>
+    </div>
+
+    <!-- Job 5: Sales Manager -->
+    <div class="job-card">
+      <div class="job-header">
+        <h3>📈 5. Regional Sales Manager – Logistics</h3>
+        <div class="job-tags">
+          <div class="tag">
+            <img src="images/3_314.svg" alt="icon">
+            <span>Type:</span>
+            <strong>Full-time | Travel required</strong>
+          </div>
+          <div class="tag">
+            <img src="images/3_321.svg" alt="icon">
+            <span>Experience:</span>
+            <strong>5+ years in logistics/freight sales</strong>
+          </div>
+        </div>
+      </div>
+      <div class="job-details">
+        <div class="detail-block">
+          <h4>Key Responsibilities:</h4>
+          <ul>
+            <li>Drive B2B sales and grow client base across the assigned region.</li>
+            <li>Build long-term relationships with shippers, manufacturers, and distributors.</li>
+            <li>Identify and close deals with medium to large logistics clients.</li>
+            <li>Track regional sales metrics and prepare performance reports.</li>
+            <li>Collaborate with operations and customer support to ensure service excellence.</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <h4>Requirements:</h4>
+          <ul>
+            <li>Proven track record in logistics, transport, or warehousing sales.</li>
+            <li>Strong negotiation, lead generation, and CRM skills.</li>
+            <li>Bachelor’s or MBA in Business, Sales, or Logistics preferred.</li>
+            <li>Willingness to travel extensively across the region.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job-action">
+        <button class="apply-btn">Apply for this Position</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="apply" class="apply-section">
+  <div class="form-container">
+    <div class="form-header">
+      <h2>Apply Now</h2>
+      <p>Fill out the form below and we will get back to you soon</p>
+    </div>
+
+    <form class="application-form">
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="full-name">Full Name <span class="required">*</span></label>
+        <div class="input-wrapper">
+          <input type="text" id="full-name" placeholder="Enter your full name" required>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email Address <span class="required">*</span></label>
+        <div class="input-wrapper">
+          <input type="email" id="email" placeholder="your.email@example.com" required>
+        </div>
+      </div>
+
+      <!-- Phone -->
+      <div class="form-group">
+        <label for="phone">Phone Number <span class="required">*</span></label>
+        <div class="input-wrapper">
+          <input type="tel" id="phone" placeholder="+91 9876543210" required>
+        </div>
+      </div>
+
+      <!-- Resume Upload -->
+      <div class="form-group">
+        <label for="resume">Resume / CV <span class="required">*</span></label>
+        <div class="file-upload-wrapper">
+          <div class="file-input-ui">
+            <span class="choose-file-btn">Choose file</span>
+            <span class="file-name">No file chosen</span>
+          </div>
+          <input type="file" id="resume" class="hidden-file-input" accept=".pdf,.doc,.docx">
+          <p class="file-hint">Accepted formats: PDF, DOC, DOCX (Max 5MB)</p>
+        </div>
+      </div>
+
+      <!-- Additional Info -->
+      <div class="form-group">
+        <label for="additional-info">Additional Information</label>
+        <div class="textarea-wrapper">
+          <textarea id="additional-info" placeholder="Tell us why you'd be a great fit for Cargo Matters..."></textarea>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="submit-btn">Submit Application</button>
+      
+      <p class="privacy-note">By submitting this form, you agree to our privacy policy and terms of service.</p>
+    </form>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-top">
+      <!-- Brand Column -->
+      <div class="footer-brand">
+        <h3>Cargo Matters</h3>
+        <p>Leading logistics company providing comprehensive shipping solutions worldwide that truly matters.</p>
+        <div class="social-links">
+          <span>Follow Us :</span>
+          <a href="#" class="social-icon"><img src="images/3_220.svg" alt="LinkedIn"></a>
+        </div>
+      </div>
+
+      <!-- Links Container -->
+      <div class="footer-links-container">
+        <!-- Services -->
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">E-commerce</a></li>
+            <li><a href="#">Green Logistics</a></li>
+            <li><a href="#">Supply Chain</a></li>
+            <li><a href="#">View More →</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-middle">
+      <div class="privacy-note">
+        <h4>Privacy Note :</h4>
+        <p>We respect your privacy. Your information will only be used to respond to your inquiry and will not be shared.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Cargo Matters. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
