@@ -1,0 +1,119 @@
+:root {
+  --primary-red: #ED3A40;
+  --primary-black: #000000;
+  --text-dark: #101828;
+  --text-gray: #1E2939;
+  --bg-light-pink: #FFE2E2;
+  --bg-gradient-start: #FDF5F6;
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #FFFFFF;
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1528px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+
+
+/* ===============================
+   SCROLL REVEAL ANIMATION
+================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: transform, opacity;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===============================
+   STATS CARD HOVER EFFECT
+================================ */
+.stat-item {
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-6px) scale(1.05);
+}
+
+/* ===============================
+   STORY CARDS HOVER ANIMATION
+================================ */
+.info-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  will-change: transform;
+}
+
+.info-card:hover {
+  transform: scale(1.06) translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* ===============================
+   MISSION & VISION CARD ANIMATION
+================================ */
+.mission-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* ===============================
+   VALUES IMAGE HOVER EFFECT
+================================ */
+.value-bg {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.value-card:hover .value-bg {
+  transform: scale(1.1);
+  filter: blur(3px);
+}
+
+.value-overlay {
+  transition: transform 0.4s ease;
+}
+
+.value-card:hover .value-overlay {
+  transform: translateY(-10px);
+}
