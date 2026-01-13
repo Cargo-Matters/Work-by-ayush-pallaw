@@ -1,0 +1,114 @@
+:root {
+  --primary-red: #ed3a40;
+  --dark-red: #b71c1c;
+  --black: #000000;
+  --white: #ffffff;
+  --gray-text: #d1d5dc;
+  --border-color: #364153;
+  --bg-light: #fef2f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: var(--black);
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1528px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Utility for hiding scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+
+/* ===============================
+   REVEAL BASE
+================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===============================
+   STAGGER SUPPORT
+================================ */
+.reveal-stagger {
+  transition-delay: var(--delay, 0ms);
+}
+
+/* ===============================
+   HORIZONTAL SLIDES (OPTIONAL)
+================================ */
+.slide-left {
+  transform: translateX(-60px);
+}
+
+.slide-right {
+  transform: translateX(60px);
+}
+
+.slide-left.active,
+.slide-right.active {
+  transform: translateX(0);
+}
+
+/* ===============================
+   SMOOTH LANDING FEEL
+================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===============================
+   PARALLAX (OPTIONAL)
+================================ */
+.parallax {
+  will-change: transform;
+}
+
+

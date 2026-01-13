@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cargo Matters - Logistics Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:Header */
+.site-header {
+  background-color: #ed3a40;
+  color: white;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dedede;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 156px;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+}
+
+.main-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-support {
+  background-color: white;
+  color: #ed3a40; /* Assuming brand color for text */
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 1200px) {
+  .header-inner {
+    padding: 0 20px;
+  }
+  .main-nav {
+    display: none; /* Hidden on mobile for simplicity */
+  }
+}
+
+/* CSS for section section:Hero */
+.hero-container {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-text-wrapper {
+  max-width: 825px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.hero-text-wrapper h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.hero-text-wrapper p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #d1d5dc;
+  margin: 0;
+  max-width: 760px;
+}
+
+/* CSS for section section:SubNav */
+#subnav {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.subnav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 156px;
+}
+
+.subnav-scroll {
+  flex: 1;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.subnav-items {
+  display: inline-flex;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.subnav-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 20px;
+  border: 1px solid #b71c1c;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  background-color: white;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.subnav-pill.active {
+  background-color: #b71c1c; /* Assuming active state based on first item style in Figma */
+  color: white;
+}
+
+.subnav-pill.highlight {
+  background-color: #b71c1c;
+  color: white;
+}
+
+.subnav-pill:hover {
+  background-color: #fef2f2;
+  color: #b71c1c;
+}
+
+.subnav-pill.active:hover, .subnav-pill.highlight:hover {
+  background-color: #9a1616;
+  color: white;
+}
+
+.scroll-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1200px) {
+  .subnav-wrapper {
+    padding: 0 20px;
+  }
+}
+
+/* CSS for section section:Services */
+.services-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 0 20px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+  min-height: 620px;
+}
+
+.service-image {
+  flex: 1;
+  min-width: 0; /* Fix flexbox overflow */
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  border-left: 1px solid #364153;
+}
+
+.service-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.service-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #d1d5dc;
+  margin-bottom: 24px;
+}
+
+.sub-services h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.sub-service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.sub-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 10px;
+  color: black;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.icon-box {
+  background-color: #fef2f2;
+  border-radius: 4px;
+  padding: 5px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box img {
+  width: 14px;
+  height: 14px;
+}
+
+.service-cta {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #364153;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-cta::before {
+  content: "Smarter logistics. Seamless delivery.";
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-contact {
+  background-color: #ff383c;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .service-card {
+    flex-direction: column;
+    height: auto;
+  }
+  .service-image {
+    height: 300px;
+  }
+  .service-content {
+    border-left: none;
+    border-top: 1px solid #364153;
+  }
+  .sub-service-grid {
+    grid-template-columns: 1fr;
+  }
+  .service-cta {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
+
+/* CSS for section section:Footer */
+.site-footer {
+  background-color: #000000;
+  color: white;
+  padding: 60px 0 20px;
+}
+
+.footer-inner {
+  padding: 0 124px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.brand-col {
+  max-width: 300px;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.footer-desc {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.footer-links-group {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+  color: white;
+}
+
+.footer-middle {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.privacy-note {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.privacy-note .label {
+  font-weight: 600;
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: white;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .footer-inner {
+    padding: 0 20px;
+  }
+  .footer-top {
+    flex-direction: column;
+  }
+  .footer-links-group {
+    gap: 40px;
+  }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="header">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <!-- Placeholder for Logo text based on design -->
+        <span class="logo-text">Cargo Matters</span>
+      </a>
+      
+      <nav class="main-nav">
+        <a href="#" class="nav-item">
+          <span>About Us</span>
+          <img src="images/0_612.svg" alt="chevron">
+        </a>
+        <a href="#" class="nav-item">
+          <span>Services</span>
+          <img src="images/0_626.svg" alt="chevron">
+        </a>
+        <a href="#" class="nav-item">
+          <span>Industries</span>
+          <img src="images/0_658.svg" alt="chevron">
+        </a>
+        <a href="#" class="nav-item">
+          <span>Partner</span>
+          <img src="images/0_702.svg" alt="chevron">
+        </a>
+        <a href="#" class="nav-item">
+          <span>Careers</span>
+          <img src="images/0_718.svg" alt="chevron">
+        </a>
+        <a href="#" class="nav-item">
+          <span>Contact Us</span>
+          <img src="images/0_729.svg" alt="chevron">
+        </a>
+      </nav>
+
+      <a href="#" class="btn btn-support">
+        Support
+      </a>
+    </div>
+  </header>
+</section>
+<section id="hero">
+  <div class="hero-container">
+    <div class="hero-bg">
+      <img src="images/9492b3019158d838d9e581485b75da80c00f7fc2.png" alt="Hero Background" class="hero-img">
+      <div class="hero-overlay"></div>
+      <div class="hero-gradient"></div>
+    </div>
+    
+    <div class="hero-content container">
+      <div class="hero-text-wrapper">
+        <h1>Our Services</h1>
+        <p>Comprehensive logistics solutions tailored to meet your business needs with reliability, speed, and exceptional service quality across every touchpoint of the supply chain.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="subnav">
+  <div class="subnav-wrapper container">
+    <button class="scroll-btn left">
+      <img src="images/0_601.svg" alt="Scroll Left">
+    </button>
+    
+    <div class="subnav-scroll hide-scrollbar">
+      <div class="subnav-items">
+        <a href="#" class="subnav-pill active">Warehousing and Distribution</a>
+        <a href="#" class="subnav-pill">Full Truck Load Transportation</a>
+        <a href="#" class="subnav-pill">Fulfillment Centres</a>
+        <a href="#" class="subnav-pill">Supply Chain</a>
+        <a href="#" class="subnav-pill">E-commerce</a>
+        <a href="#" class="subnav-pill">International Cross Border</a>
+        <a href="#" class="subnav-pill">Data Intelligence</a>
+        <a href="#" class="subnav-pill">Cold Chain Logistics</a>
+        <a href="#" class="subnav-pill">Contract Logistics & Integrated 3PL / 4PL</a>
+        <a href="#" class="subnav-pill">Sustainability & Green Logistics</a>
+        <a href="#" class="subnav-pill highlight">Logistics Consulting & Supply Chain Design</a>
+      </div>
+    </div>
+
+    <button class="scroll-btn right">
+      <img src="images/3_712.svg" alt="Scroll Right">
+    </button>
+  </div>
+</section>
+<section id="services" class="services-section">
+  <div class="container services-container">
+    
+    <!-- Service 1: Warehousing -->
+    <article class="service-card">
+      <div class="service-image">
+        <img src="images/528a228c11f574c07c5bfdd759fc8adcb85471f7.png" alt="Warehousing and Distribution">
+      </div>
+      <div class="service-content">
+        <h2>Warehousing and Distribution</h2>
+        <p class="service-desc">Cargo Matters provides scalable, tech-enabled warehousing and distribution solutions tailored to industry-specific needs. Our facilities are built with automation, data-driven inventory control, and real-time visibility to support fast-moving supply chains.</p>
+        <p class="service-desc">We cater to diverse storage requirements—from FMCG to pharma and electronics—ensuring safe, compliant, and efficient handling of goods.</p>
+        
+        <div class="sub-services">
+          <h3>Sub-services:</h3>
+          <div class="sub-service-grid">
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2038.svg" alt="icon"></div>
+              <span>Multi-client and dedicated warehousing solutions</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2042.svg" alt="icon"></div>
+              <span>Temperature-controlled and secure storage zones</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2046.svg" alt="icon"></div>
+              <span>Inventory management with WMS, RFID, and IoT integration</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2051.svg" alt="icon"></div>
+              <span>Automated picking, packing, and palletization</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2055.svg" alt="icon"></div>
+              <span>Just-in-time (JIT) inventory support</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2059.svg" alt="icon"></div>
+              <span>Kitting, bundling, labeling, and quality checks</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2063.svg" alt="icon"></div>
+              <span>Route optimization and multi-modal distribution</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-cta">
+          <a href="#" class="btn-contact">
+            <span>Contact now</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Service 2: Full Truck Load -->
+    <article class="service-card">
+      <div class="service-image">
+        <img src="images/a342e6f178bc4b720eb30a81b1c9829825abe5c6.png" alt="Full Truck Load Transportation">
+      </div>
+      <div class="service-content">
+        <h2>Full Truck Load Transportation</h2>
+        <p class="service-desc">Our Full Truck Load distribution services are optimized for businesses moving large volumes that require dedicated fleet services. With increasing focus on efficiency, visibility, and sustainability, we integrate telematics, GPS tracking, and route optimization tools.</p>
+        
+        <div class="sub-services">
+          <h3>Sub-services:</h3>
+          <div class="sub-service-grid">
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2454.svg" alt="icon"></div>
+              <span>Pan-India FTL distribution with express and scheduled options</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2458.svg" alt="icon"></div>
+              <span>GPS-enabled real-time tracking</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2462.svg" alt="icon"></div>
+              <span>Temperature-controlled and containerized transport</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2467.svg" alt="icon"></div>
+              <span>Oversized and heavy-load cargo handling</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2471.svg" alt="icon"></div>
+              <span>Predictive maintenance and fleet analytics</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2475.svg" alt="icon"></div>
+              <span>Route and fuel optimization systems</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2479.svg" alt="icon"></div>
+              <span>Compliance with safety, hazmat, and regulatory norms</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-cta">
+          <a href="#" class="btn-contact"><span>Contact now</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Service 3: Fulfillment Centres -->
+    <article class="service-card">
+      <div class="service-image">
+        <img src="images/e4acb483caf489d1f506e99baf475d3e980f036c.png" alt="Fulfillment Centres">
+      </div>
+      <div class="service-content">
+        <h2>Fulfillment Centres</h2>
+        <p class="service-desc">Our tech-driven fulfillment centers handle large-scale B2B and B2C orders with speed, accuracy, and brand-aligned customization. As customer expectations evolve around fast shipping and reverse logistics, we offer micro-fulfillment setups in urban centers.</p>
+        
+        <div class="sub-services">
+          <h3>Sub-services:</h3>
+          <div class="sub-service-grid">
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2261.svg" alt="icon"></div>
+              <span>Pick, pack & ship operations</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2265.svg" alt="icon"></div>
+              <span>SKU-level inventory accuracy with barcode/RFID tracking</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2269.svg" alt="icon"></div>
+              <span>Real-time integration with marketplaces & ERP systems</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2273.svg" alt="icon"></div>
+              <span>Branded packaging and gift wrapping</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2277.svg" alt="icon"></div>
+              <span>Reverse logistics and return management</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2281.svg" alt="icon"></div>
+              <span>Assembly, bundling, and value-added services</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2285.svg" alt="icon"></div>
+              <span>Urban micro-fulfillment for same/next-day delivery</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-cta">
+          <a href="#" class="btn-contact"><span>Contact now</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Service 4: Supply Chain -->
+    <article class="service-card">
+      <div class="service-image">
+        <img src="images/fc878e9ef9097d93c14640bdf72ed7245ab60538.png" alt="Supply Chain">
+      </div>
+      <div class="service-content">
+        <h2>Supply Chain</h2>
+        <p class="service-desc">Cargo Matters offers holistic supply chain solutions across planning, execution, and optimization. We combine logistics execution with intelligent forecasting, demand planning, and vendor coordination to build resilient and responsive supply chains.</p>
+        
+        <div class="sub-services">
+          <h3>Sub-services:</h3>
+          <div class="sub-service-grid">
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2593.svg" alt="icon"></div>
+              <span>End-to-end supply chain design & execution</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2597.svg" alt="icon"></div>
+              <span>Demand forecasting and capacity planning</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2601.svg" alt="icon"></div>
+              <span>Procurement & vendor coordination</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2605.svg" alt="icon"></div>
+              <span>Inventory optimization & replenishment</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2609.svg" alt="icon"></div>
+              <span>Risk management and contingency planning</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2613.svg" alt="icon"></div>
+              <span>Integrated TMS/WMS platforms for real-time control</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2617.svg" alt="icon"></div>
+              <span>ESG-compliant supply chain solutions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-cta">
+          <a href="#" class="btn-contact"><span>Contact now</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Service 5: E-commerce -->
+    <article class="service-card">
+      <div class="service-image">
+        <img src="images/e25d6960f63f1431c7b96ceaa75abe21fe0e97b1.png" alt="E-commerce">
+      </div>
+      <div class="service-content">
+        <h2>E-commerce</h2>
+        <p class="service-desc">At Cargo Matters, we specialize in optimizing e-commerce logistics to drive revenue growth, enhance customer satisfaction, and overcome complex supply chain challenges across India and beyond.</p>
+        
+        <div class="sub-services">
+          <h3>Sub-services:</h3>
+          <div class="sub-service-grid">
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2720.svg" alt="icon"></div>
+              <span>Order fulfillment optimization and last-mile delivery strategy</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2725.svg" alt="icon"></div>
+              <span>Inventory control, demand forecasting, and RTO reduction</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2729.svg" alt="icon"></div>
+              <span>Predictive analytics, AI, and blockchain-based logistics transparency</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2734.svg" alt="icon"></div>
+              <span>Customer retention, loyalty, and conversion optimization programs</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2739.svg" alt="icon"></div>
+              <span>Smart warehousing, IoT, and sustainability-focused logistics solutions</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/1_2744.svg" alt="icon"></div>
+              <span>Technology integration for real-time supply chain visibility and efficiency</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-cta">
+          <a href="#" class="btn-contact"><span>Contact now</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Service 6: International Cross Border -->
+    <article class="service-card">
+      <div class="service-image">
+        <img src="images/31bcd16d011f77fe34a2d5ac06133015121c16ef.png" alt="International Cross Border">
+      </div>
+      <div class="service-content">
+        <h2>International Cross Border</h2>
+        <p class="service-desc">Enable seamless global trade with our end-to-end cross-border logistics and freight forwarding solutions. Whether by air, sea, or land, we ensure your cargo moves efficiently across borders — with full visibility, compliance, and care.</p>
+        
+        <div class="sub-services">
+          <h3>Sub-services:</h3>
+          <div class="sub-service-grid">
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1299.svg" alt="icon"></div>
+              <span>Air, sea, and road freight solutions with global reach and real-time tracking</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1304.svg" alt="icon"></div>
+              <span>FCL/LCL shipping, cargo consolidation, and deconsolidation services</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1309.svg" alt="icon"></div>
+              <span>Customs clearance, documentation, and regulatory compliance support</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1314.svg" alt="icon"></div>
+              <span>Bonded and non-bonded international warehousing and distribution</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1319.svg" alt="icon"></div>
+              <span>Route optimization and carrier coordination for cost-effective transit</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1324.svg" alt="icon"></div>
+              <span>Integrated cross-border logistics for eCommerce and regional trade</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-cta">
+          <a href="#" class="btn-contact"><span>Contact now</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Service 7: Data Intelligence -->
+    <article class="service-card">
+      <div class="service-image">
+        <img src="images/e17e1f2833f288ca1d12e7a026707ffc80ed68d1.png" alt="Data Intelligence">
+      </div>
+      <div class="service-content">
+        <h2>Data Intelligence</h2>
+        <p class="service-desc">Data is the backbone of modern logistics. Our Data Intelligence services turn raw logistics data into actionable insights using AI, machine learning, and predictive analytics. With increasing demand for real-time visibility and decision-making, we offer tailored dashboards and alert systems.</p>
+        
+        <div class="sub-services">
+          <h3>Sub-services:</h3>
+          <div class="sub-service-grid">
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1408.svg" alt="icon"></div>
+              <span>Real-time KPI dashboards and supply chain visibility tools</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1412.svg" alt="icon"></div>
+              <span>Predictive analytics for demand forecasting and risk management</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1417.svg" alt="icon"></div>
+              <span>AI-powered route planning and smart inventory control</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1421.svg" alt="icon"></div>
+              <span>Performance benchmarking and cost optimization insights</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1425.svg" alt="icon"></div>
+              <span>Automated exception alerts with root cause analytics</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1429.svg" alt="icon"></div>
+              <span>Integration with ERP, CRM, and third-party logistics platforms</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-cta">
+          <a href="#" class="btn-contact"><span>Contact now</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Service 8: Cold Chain Logistics -->
+    <article class="service-card">
+      <div class="service-image">
+        <img src="images/869ec51782f116fb40342774fb4c85290215f743.png" alt="Cold Chain Logistics">
+      </div>
+      <div class="service-content">
+        <h2>Cold Chain Logistics</h2>
+        <p class="service-desc">Sensitive goods like pharmaceuticals, vaccines, perishables, and specialty chemicals demand strict temperature control. Cargo Matters provides end-to-end cold chain logistics that maintain product integrity from origin to delivery.</p>
+        
+        <div class="sub-services">
+          <h3>Sub-services:</h3>
+          <div class="sub-service-grid">
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1515.svg" alt="icon"></div>
+              <span>Temperature-controlled warehousing (2°C to 8°C, -20°C)</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1519.svg" alt="icon"></div>
+              <span>Refrigerated transport and reefer containers</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1523.svg" alt="icon"></div>
+              <span>Real-time temperature monitoring and alerts</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1527.svg" alt="icon"></div>
+              <span>Cold chain for pharmaceuticals and vaccines</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1531.svg" alt="icon"></div>
+              <span>Frozen food and perishables logistics</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1535.svg" alt="icon"></div>
+              <span>Cold chain compliance and documentation</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/0_1539.svg" alt="icon"></div>
+              <span>Last mile cold chain delivery</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-cta">
+          <a href="#" class="btn-contact"><span>Contact now</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Service 9: Contract Logistics -->
+    <article class="service-card">
+      <div class="service-image">
+        <img src="images/e02b31652e3ff94af773412f055158b50841dc55.png" alt="Contract Logistics">
+      </div>
+      <div class="service-content">
+        <h2>Contract Logistics & Integrated 3PL / 4PL</h2>
+        <p class="service-desc">For businesses looking to outsource logistics entirely or streamline operations, Cargo Matters offers scalable 3PL and 4PL contract logistics services. We act as your extended logistics arm — handling everything from inbound and outbound movement to inventory control.</p>
+        
+        <div class="sub-services">
+          <h3>Sub-services:</h3>
+          <div class="sub-service-grid">
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/3_625.svg" alt="icon"></div>
+              <span>Complete warehousing and transportation outsourcing</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/3_629.svg" alt="icon"></div>
+              <span>Contract-based operations with shared KPIs</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/3_633.svg" alt="icon"></div>
+              <span>Vendor and carrier management across the supply chain</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/3_637.svg" alt="icon"></div>
+              <span>Technology integration (TMS, WMS, ERP)</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/3_641.svg" alt="icon"></div>
+              <span>Performance monitoring and continuous improvement</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/3_645.svg" alt="icon"></div>
+              <span>Dedicated logistics managers and support teams</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/3_649.svg" alt="icon"></div>
+              <span>Asset-light 4PL coordination and orchestration</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-cta">
+          <a href="#" class="btn-contact"><span>Contact now</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Service 10: Sustainability -->
+    <article class="service-card">
+      <div class="service-image">
+        <img src="images/b83f5721e736d6eef809d504b0c5672eb675d128.png" alt="Sustainability">
+      </div>
+      <div class="service-content">
+        <h2>Sustainability & Green Logistics</h2>
+        <p class="service-desc">Cargo Matters is committed to building a logistics ecosystem that’s efficient and sustainable. As clients and regulators increasingly expect environmentally conscious operations, we offer tailored green logistics solutions.</p>
+        
+        <div class="sub-services">
+          <h3>Sub-services:</h3>
+          <div class="sub-service-grid">
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/3_549.svg" alt="icon"></div>
+              <span>EV-based delivery fleets and green last-mile services</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/3_553.svg" alt="icon"></div>
+              <span>Carbon emission tracking and sustainability reporting</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/3_557.svg" alt="icon"></div>
+              <span>Solar-powered and energy-efficient warehouse operations</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/3_561.svg" alt="icon"></div>
+              <span>Eco-friendly packaging and recyclable materials</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/3_565.svg" alt="icon"></div>
+              <span>Route optimization to reduce fuel consumption</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/3_569.svg" alt="icon"></div>
+              <span>Reverse logistics for recycling and repurposing</span>
+            </div>
+            <div class="sub-item">
+              <div class="icon-box"><img src="images/3_573.svg" alt="icon"></div>
+              <span>ESG-compliant logistics strategies</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-cta">
+          <a href="#" class="btn-contact"><span>Contact now</span></a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="footer">
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      
+      <div class="footer-top">
+        <div class="footer-col brand-col">
+          <h3 class="footer-logo">Cargo Matters</h3>
+          <p class="footer-desc">Leading logistics company providing comprehensive shipping solutions worldwide that truly matters.</p>
+          <div class="social-links">
+            <span>Follow Us :</span>
+            <a href="#" class="social-icon"><img src="images/0_533.svg" alt="LinkedIn"></a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">E-commerce</a></li>
+              <li><a href="#">Green Logistics</a></li>
+              <li><a href="#">Supply Chain</a></li>
+              <li><a href="#">View More →</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-middle">
+        <div class="privacy-note">
+          <span class="label">Privacy Note :</span>
+          <span class="text">We respect your privacy. Your information will only be used to respond to your inquiry and will not be shared.</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Cargo Matters. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+</section>
+</body>
+</html>
