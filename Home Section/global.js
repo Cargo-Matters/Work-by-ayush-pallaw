@@ -1,0 +1,1 @@
+// No specific JS required for this static layout

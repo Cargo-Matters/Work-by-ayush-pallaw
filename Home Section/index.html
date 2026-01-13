@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:Header */
+.site-header {
+  background-color: var(--primary-red);
+  border-bottom: 1px solid #e2e4e9;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 100;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-text {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.btn-support {
+  background-color: #ffffff;
+  color: var(--primary-red);
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.btn-support:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .main-nav {
+    display: none; /* Hidden on mobile for this demo */
+  }
+}
+
+/* CSS for section section:Hero */
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 938px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.bg-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bg-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(106deg, #FFFFFF 0%, rgba(255, 255, 255, 0.95) 6.73%, rgba(255, 255, 255, 0.60) 13.81%, rgba(255, 255, 255, 0.60) 23.59%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  padding: 80px 20px;
+}
+
+.hero-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 576px;
+}
+
+.tag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(212, 17, 17, 0.1);
+  padding: 8px 16px;
+  border-radius: 9999px;
+  width: fit-content;
+  color: #ff383c;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.tag-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ff383c;
+  border-radius: 50%;
+}
+
+.hero-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #000;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.btn-primary {
+  background-color: #ff0105;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  border: 1px solid #d41111;
+}
+
+.btn-secondary {
+  background-color: #ff0105; /* Design shows red bg for both */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  border: 1px solid #d41111;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-stats {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(1px);
+  border: 1px solid #e2e4e9;
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1216px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.stat-number {
+  color: #ff0105;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.stat-label {
+  color: #000;
+  font-size: 16px;
+}
+
+.bottom-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 128px;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  transform: rotate(180deg); /* To fade out at bottom */
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 40px; }
+  .hero-stats { flex-wrap: wrap; gap: 24px; }
+  .stat-item { min-width: 45%; }
+}
+
+/* CSS for section section:Services */
+.services-section {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #14181f;
+  margin-bottom: 16px;
+}
+
+.section-header p {
+  font-size: 16px;
+  color: #000;
+}
+
+.services-grid {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  position: relative;
+  width: 217px;
+  height: 290px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .card-bg {
+  transform: scale(1.05);
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+  z-index: 1;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  transition: opacity 0.3s;
+}
+
+.card-content h3 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Hover State Implementation */
+.card-hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(212, 17, 17, 0.9); /* Red overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+  backdrop-filter: blur(2px);
+}
+
+.service-card:hover .card-hover-content {
+  opacity: 1;
+}
+
+.card-hover-content h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card-hover-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.services-footer {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.btn-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 32px;
+  border: 1px solid #ff0105;
+  border-radius: 12px;
+  color: #ff0105;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-view-all:hover {
+  background-color: #fff5f5;
+}
+
+/* CSS for section section:Features */
+.features-section {
+  padding: 96px 0;
+  background-color: #ffffff;
+}
+
+.features-grid {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  position: relative;
+  width: 302px;
+  height: 224px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.feature-bg-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.feature-img-placeholder {
+  /* In a real scenario, this would be the image */
+  background-image: url('https://placehold.co/302x224/e0e0e0/999999?text=Feature+Image');
+  background-size: cover;
+}
+
+.feature-icon-wrapper {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  z-index: 2;
+}
+
+.feature-icon-bg {
+  background-color: #d41111;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d41111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.feature-card:hover .feature-overlay {
+  opacity: 1;
+}
+
+.overlay-icon-bg {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.feature-overlay h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.feature-overlay p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* CSS for section section:Brands */
+.brands-section {
+  background-color: #14181f;
+  padding: 64px 0;
+  color: #fff;
+}
+
+.brands-section .section-header h2 {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.brands-marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.brands-track {
+  display: flex;
+  gap: 85px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.brand-logo {
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.brand-logo:hover {
+  opacity: 1;
+}
+
+/* CSS for section section:CTA */
+.cta-section {
+  background-color: #14181f;
+  padding: 96px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-container {
+  width: 100%;
+  max-width: 1280px;
+  background-color: #d41111;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  padding: 48px;
+}
+
+.cta-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.blur-circle {
+  position: absolute;
+  width: 384px;
+  height: 384px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  filter: blur(64px);
+  opacity: 0.1;
+}
+
+.circle-1 { top: -192px; right: -100px; }
+.circle-2 { bottom: -192px; left: -100px; }
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.cta-text {
+  flex: 1;
+  max-width: 576px;
+  color: #fff;
+}
+
+.cta-text h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.cta-text p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 32px;
+}
+
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-cta:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cta-image-block {
+  flex: 1;
+  max-width: 576px;
+  height: 288px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.support-img-placeholder {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.support-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(212, 17, 17, 0) 0%, #D41111 100%);
+}
+
+@media (max-width: 900px) {
+  .cta-content { flex-direction: column; text-align: center; }
+  .cta-text { margin-bottom: 32px; }
+  .cta-image-block { width: 100%; }
+}
+
+/* CSS for section section:Footer */
+.site-footer {
+  background-color: #14181f;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 96px;
+  padding-bottom: 32px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.brand-col {
+  max-width: 280px;
+}
+
+.footer-logo {
+  margin-bottom: 24px;
+}
+
+.brand-desc {
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h4 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.link-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .footer-top { flex-direction: column; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="section-header">
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <a href="#" class="logo-text">Cargo Matters.</a>
+      </div>
+      
+      <nav class="main-nav">
+        <a href="#" class="nav-link">About <img src="images/I1_1508_1_2516.svg" alt="arrow" class="nav-icon"></a>
+        <a href="#" class="nav-link">Services <img src="images/I1_1510_1_2524.svg" alt="arrow" class="nav-icon"></a>
+        <a href="#" class="nav-link">Industries <img src="images/I1_1512_1_2532.svg" alt="arrow" class="nav-icon"></a>
+        <a href="#" class="nav-link">Partner <img src="images/I1_1514_1_2540.svg" alt="arrow" class="nav-icon"></a>
+        <a href="#" class="nav-link">Careers <img src="images/I1_1516_1_2548.svg" alt="arrow" class="nav-icon"></a>
+        <a href="#" class="nav-link">Contact Us <img src="images/I1_1518_1_2556.svg" alt="arrow" class="nav-icon"></a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#" class="btn-support">Support</a>
+      </div>
+    </div>
+  </header>
+</section>
+<section id="section-hero" class="hero-section">
+  <div class="hero-background">
+    <!-- Merged Background: Image + Gradient Overlay -->
+    <div class="bg-image-wrapper">
+      <img src="images/44900fb1ca2bcfaaf44e30a61d47dc5f5931a516.png" alt="Hero Background" class="bg-image">
+      <div class="bg-gradient"></div>
+    </div>
+  </div>
+
+  <div class="hero-content container">
+    <div class="hero-text-block">
+      <div class="tag-badge">
+        <div class="tag-dot"></div>
+        <span>Trusted by 200+ Global Clients</span>
+      </div>
+      
+      <h1 class="hero-title">Your Cargo<br>Matters to Us</h1>
+      
+      <p class="hero-subtitle">
+        Professional logistics solutions with real-time tracking, global reach, and unmatched reliability for businesses of all sizes.
+      </p>
+      
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary">
+          Get in Touch
+          <div class="icon-box"><img src="images/I1_1393_1_334.svg" alt="arrow"></div>
+        </a>
+        <a href="#" class="btn-secondary">Explore Services</a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number">2,000+</span>
+        <span class="stat-label">Trucks on Roads</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">120</span>
+        <span class="stat-label">Countries Served</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">5,000+</span>
+        <span class="stat-label">Tons of Freight Volume</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">200+</span>
+        <span class="stat-label">Customers & Clients</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bottom-gradient"></div>
+</section>
+<section id="section-services" class="services-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Services</h2>
+      <p>Comprehensive logistics solutions tailored to meet your business needs</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <div class="service-card">
+        <img src="images/77b49a6c599c6f7b2bb70879b2010f681112c9ea.png" alt="Full Truck Load" class="card-bg">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>Full Truck Load<br>Transportation</h3>
+        </div>
+        <!-- Hover Content -->
+        <div class="card-hover-content">
+          <h3>Full Truck Load<br>Transportation</h3>
+          <p>Efficient FTL services across India with dedicated trucks.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-card">
+        <img src="images/3080a35a219541c9943e13268951935a6e2187ae.png" alt="E-Commerce" class="card-bg">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>E-Commerce</h3>
+        </div>
+        <div class="card-hover-content">
+          <h3>E-Commerce</h3>
+          <p>End-to-end e-commerce logistics with fast delivery.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-card">
+        <img src="images/96391580906df0c2379a0cc00bffb1f7f474747c.png" alt="Cross Border" class="card-bg">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>International Cross Border</h3>
+        </div>
+        <div class="card-hover-content">
+          <h3>International Cross<br>Border</h3>
+          <p>Global shipping with customs clearance support.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-card">
+        <img src="images/9dfcd78ad4b9e29ed41ec3e4792de2f9382a9bd1.png" alt="Data Intelligence" class="card-bg">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>Data Intelligence</h3>
+        </div>
+        <div class="card-hover-content">
+          <h3>Data Intelligence</h3>
+          <p>Advanced analytics to optimize your supply chain.</p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="service-card">
+        <img src="images/42150afd533ab34d97275e0685b0452bdec55c8d.png" alt="Warehousing" class="card-bg">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3>Warehousing and<br>Distribution</h3>
+        </div>
+        <div class="card-hover-content">
+          <h3>Warehousing and<br>Distribution</h3>
+          <p>Strategic warehousing across key locations.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="services-footer">
+      <a href="#" class="btn-view-all">
+        View All Services
+        <div class="icon-box"><img src="images/I1_1410_17_468.svg" alt="arrow"></div>
+      </a>
+    </div>
+  </div>
+</section>
+<section id="section-features" class="features-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Why Choose Cargo Matters?</h2>
+      <p>We provide comprehensive logistics solutions with cutting-edge technology and exceptional service.</p>
+    </div>
+
+    <div class="features-grid">
+      <!-- Feature 1 -->
+      <div class="feature-card">
+        <div class="feature-bg-wrapper">
+           <!-- Placeholder for missing image hash, using colored div or generic placeholder -->
+           <div class="feature-img-placeholder" style="background-color: #eee; width: 100%; height: 100%;"></div>
+        </div>
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon-bg">
+            <img src="images/I1_1419_1_392.svg" alt="Fast Delivery">
+          </div>
+        </div>
+        
+        <!-- Hover Overlay -->
+        <div class="feature-overlay">
+          <div class="overlay-icon-bg">
+            <img src="images/I1_1419_1_397.svg" alt="Icon">
+          </div>
+          <h3>Fast Delivery</h3>
+          <p>Express delivery options with same-day and next-day shipping available nationwide.</p>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature-card">
+        <div class="feature-bg-wrapper">
+           <div class="feature-img-placeholder" style="background-color: #eee; width: 100%; height: 100%;"></div>
+        </div>
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon-bg">
+            <img src="images/I1_1420_1_428.svg" alt="Global Reach">
+          </div>
+        </div>
+        
+        <div class="feature-overlay">
+          <div class="overlay-icon-bg">
+            <img src="images/I1_1420_1_435.svg" alt="Icon">
+          </div>
+          <h3>Global Reach</h3>
+          <p>International shipping to over 200 countries with reliable tracking and customs support.</p>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="feature-card">
+        <div class="feature-bg-wrapper">
+           <div class="feature-img-placeholder" style="background-color: #eee; width: 100%; height: 100%;"></div>
+        </div>
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon-bg">
+            <img src="images/I1_1421_1_464.svg" alt="Secure Handling">
+          </div>
+        </div>
+        
+        <div class="feature-overlay">
+          <div class="overlay-icon-bg">
+            <img src="images/I1_1421_1_469.svg" alt="Icon">
+          </div>
+          <h3>Secure Handling</h3>
+          <p>Advanced security measures and insurance options to protect your valuable shipments.</p>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="feature-card">
+        <div class="feature-bg-wrapper">
+           <div class="feature-img-placeholder" style="background-color: #eee; width: 100%; height: 100%;"></div>
+        </div>
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon-bg">
+            <img src="images/I1_1422_1_496.svg" alt="Support">
+          </div>
+        </div>
+        
+        <div class="feature-overlay">
+          <div class="overlay-icon-bg">
+            <img src="images/I1_1422_1_501.svg" alt="Icon">
+          </div>
+          <h3>24/7 Support</h3>
+          <p>Round-the-clock customer support and real-time tracking updates for peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-brands" class="brands-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Trusted by Leading Brands Worldwide</h2>
+    </div>
+    
+    <div class="brands-marquee">
+      <div class="brands-track">
+        <img src="images/4cbaa440bba3fb87a63d23940c9e6d35f36531a2.png" alt="Goodluck" class="brand-logo">
+        <img src="images/e732980402049f57aacc7f7a0bffd9fadbd8c640.png" alt="Haldiram" class="brand-logo">
+        <img src="images/ac30c8fca173e198657176d99e91e8212e266540.png" alt="Havells" class="brand-logo">
+        <img src="images/c0d8315dbc1171eca30968b6bfbf2257b4c8253d.png" alt="JSW" class="brand-logo">
+        <img src="images/c60ceae5283b901db637be50efd4b77eb4b339e7.png" alt="Kanodia" class="brand-logo">
+        <img src="images/e283d7fd76d9607de78035823de736699f0da5cd.png" alt="Nestle" class="brand-logo">
+        <img src="images/6644f6e1aea40eea4c17a69c1d66fd6363684795.png" alt="Nilkamal" class="brand-logo">
+        <img src="images/666bcf95c944b0dcab8f083a8de0d56e51d479f1.png" alt="Orient" class="brand-logo">
+        <img src="images/de29f9dbf12e8bf387783ecfc2f05e43d409ab30.png" alt="Tata" class="brand-logo">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-cta" class="cta-section">
+  <div class="cta-container">
+    <div class="cta-background">
+      <div class="blur-circle circle-1"></div>
+      <div class="blur-circle circle-2"></div>
+    </div>
+    
+    <div class="cta-content">
+      <div class="cta-text">
+        <h2>Ready to Move your Freight?</h2>
+        <p>Join thousands of businesses who trust Cargo Matters for their logistics needs. Get started today with a free quote.</p>
+        <div class="cta-action">
+          <a href="#" class="btn-cta">
+            Contact Sales
+            <img src="images/I1_1435_1_362.svg" alt="arrow">
+          </a>
+        </div>
+      </div>
+      
+      <div class="cta-image-block">
+        <!-- Placeholder for Customer Support Image -->
+        <div class="support-img-placeholder" style="background-image: url('https://placehold.co/576x288/333/fff?text=Customer+Support');"></div>
+        <div class="support-gradient"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="section-footer" class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <span class="logo-text">Cargo Matters.</span>
+        </div>
+        <p class="brand-desc">
+          Leading logistics company providing comprehensive shipping solutions worldwide that truly matters.
+        </p>
+        <div class="social-links">
+          <span>Follow Us:</span>
+          <div class="social-icon">
+            <img src="images/I1_1454_1_516.svg" alt="Social">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#">E-commerce</a></li>
+          <li><a href="#">Green Logistics</a></li>
+          <li><a href="#">Supply Chain</a></li>
+          <li><a href="#" class="link-with-icon">View More <img src="images/I1_1462_1_527.svg" alt="arrow"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact-col">
+        <h4>Get in Touch</h4>
+        <div class="contact-item">
+          <img src="images/1_1482.svg" alt="Phone">
+          <span>+91 9718559924</span>
+        </div>
+        <div class="contact-item">
+          <img src="images/1_1486.svg" alt="Email">
+          <span>cargomattersindia@gmail.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Privacy Note: We respect your privacy. Your information will only be used to respond to your inquiry and will not be shared.</p>
+      <p>© 2025 Cargo Matters. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
